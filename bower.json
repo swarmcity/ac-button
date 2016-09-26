@@ -18,7 +18,9 @@
     "/test/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#^1.2.0"
+    "polymer": "Polymer/polymer#^1.2.0",
+    "ac-style": "https://github.com/ArcadeCity/ac-style.git",
+    "ac-icon": "https://github.com/ArcadeCity/ac-icon.git"
   },
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.0.0"

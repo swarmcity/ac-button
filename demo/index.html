@@ -15,34 +15,22 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <title>ac-button Demo</title>
     <script src="../../webcomponentsjs/webcomponents-lite.min.js"></script>
     <link rel="import" href="../ac-button.html">
+<link rel="import" href="../../ac-style/ac-style.html">
   </head>
   <body unresolved>
 
-    <p>An example of <code>&lt;ac-button&gt;</code>:</p>
+<!--     <ac-button txtbtn small>This is a small txtbtn</ac-button>
+    <ac-button txtbtn txtcolor="pink">Green colored btn</ac-button>
+    <ac-button txtbtn big txtcolor="blue">Big blue colored btn</ac-button>
+ -->
+    <ac-button icon="ac-brandlogo" small txtcolor="dark"></ac-button>
+    <ac-button icon="ac-brandlogo-color" bg="base"></ac-button>
+<!--     <ac-button icon="plus" big></ac-button>
 
-    <p>Make words! <button id="saybtn">Say Something</button></p>
-    <p>Make lasers! <button id="laserbtn">Fire lasers</button></p>
 
-    <ac-button author='{"name": "Lord Meowser", "image": "http://lorempixel.com/g/300/200/cats/"}' fancy>
-      <h2>Hello ac-button</h2>
-    </ac-button>
-
-    <script>
-      var seedElement = document.querySelector('ac-button');
-
-      document.querySelector('#saybtn').addEventListener('click', function() {
-        alert(seedElement.sayHello('Hallo!'));
-      });
-
-      document.querySelector('#laserbtn').addEventListener('click', function() {
-        seedElement.fireLasers();
-      });
-
-      document.addEventListener("ac-button-lasers", function(e) {
-        console.log(e.detail.sound);
-      });
-
-    </script>
-
+    <ac-button object="pet" small></ac-button>
+    <ac-button object="pet"></ac-button>
+    <ac-button object="pet" big></ac-button>
+    <ac-button object="pet" xxl></ac-button> -->
   </body>
 </html>
