@@ -50,7 +50,7 @@ Example:
 
         --outline-color: black;
         --txt-color: black;
-        --bg-color: var(--ac-pink);
+        --bg-color: var(--ac-turquoise);
         --opacity-disabled: 1;
       }
 
@@ -61,12 +61,15 @@ Example:
         color:black;
         padding: 18px 24px 18px 24px;
         text-align: center;
-        border-top: 1px solid rgba(0,0,0,0.1);
+        background-color: var(--bg-color);
+
+/*        border-top: 1px solid rgba(0,0,0,0.1);
         border-right: 2px solid rgba(0,0,0,0.2);
         border-bottom: 2px solid rgba(0,0,0,0.2);
-        border-left: 1px solid rgba(0,0,0,0.1);
+        border-left: 1px solid rgba(0,0,0,0.1);*/
         @apply(--montserrat-reg);
         font-size: 16px;   
+        border-radius: 2px;
       };
 
       :host([txtbtn][small]) {
