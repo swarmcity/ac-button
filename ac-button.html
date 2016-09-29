@@ -108,10 +108,10 @@ Example:
 
       :host([icon]) button {
         border-radius: 50%;
-        width: 55px;
-        height: 55px;
+        width: 60px;
+        height: 60px;
         box-sizing: border-box;
-        padding: 14px;
+        padding: 0px;
         background-color: var(--bg-color);
         border: none;
         @apply(--layout-vertical);
@@ -123,10 +123,24 @@ Example:
         user-select: none;
         transition: all .05s linear;
         background-image: none;
-        -webkit-box-shadow: none;
+/*        -webkit-box-shadow: none;
         box-shadow: none;
-        cursor: pointer;
+*/        cursor: pointer;
+      box-shadow:
+        inset 0px -1px 59px -31px rgba(0,0,0,0.5),
+        0px 1px 2px -1px rgba(0,0,0,0.5);
 
+      -webkit-box-shadow:
+        inset 0px -1px 59px -31px rgba(0,0,0,0.5),
+        0px 1px 2px -1px rgba(0,0,0,0.5);
+
+      -moz-box-shadow:
+        inset 0px -1px 59px -31px rgba(0,0,0,0.5),
+        0px 1px 2px -1px rgba(0,0,0,0.5);
+
+      -o-box-shadow:
+        inset 0px -1px 59px -31px rgba(0,0,0,0.5),
+        0px 1px 2px -1px rgba(0,0,0,0.5);
       };
 
       :host([icon]):active {
@@ -163,12 +177,12 @@ Example:
         padding: 10px;
       };
 
-      :host([icon]) button {
-        width: 70px;
-        height: 70px;
+/*      :host([icon]) button {
+        width: 60px;
+        height: 60px;
         box-sizing: border-box;
-        padding: 10px;
-      };
+        padding: 0px;
+      };*/
 
       :host([icon][big]) button {
         width: 100px;
