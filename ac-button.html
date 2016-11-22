@@ -488,7 +488,7 @@ Example:
     <content></content>
     </template>
 
-    <template is="dom-if" if="{{iconbtn}}">
+    <template is="dom-if" if="{{iconbtn}}"  disabled$=[[disabled]]>
     <button>
     <ac-icon icon="{{icon}}" iconcolor="{{txtcolor}}"
       veryverysmall$=[[veryverysmall]] verysmall$=[[verysmall]] small$=[[small]] big$=[[big]]  xl$=[[xl]] xxl$=[[xxl]]></ac-icon>
@@ -496,13 +496,13 @@ Example:
     </template>
 
     
-    <template is="dom-if" if="{{objectbtn2}}">
+    <template is="dom-if" if="{{objectbtn2}}" disabled$=[[disabled]]>
       <button class$="{{iconclass}} iconcontainer" on-tap="fireDetail">
         <ac-icon class="iconz" veryverysmall$=[[veryverysmall]] veysmall$=[[veysmall]] small$=[[small]] big$=[[big]]  xl$=[[xl]] xxl$=[[xxl]] icon="{{object}}" iconcolor="blue"></ac-icon>
       </button>
     </template>
 
-    <template is="dom-if" if="{{submit}}">
+    <template is="dom-if" if="{{submit}}" disabled$=[[disabled]]>
       <input type="submit">
       <ac-icon icon="v" iconcolor="{{txtcolor}}"
       big$=[[big]] small$=[[small]]></ac-icon>
